@@ -1,0 +1,78 @@
+{
+  "navBar": {
+    "title": "Impiegati",
+    "dropdown": {
+      "changePassword": "Cambia Password",
+      "logout": "Chiudi Sessione"
+    }
+  },
+  "table": {
+    "search": {
+      "placeHolder": "Cerca",
+      "all": "Tutti",
+      "stringToMatch": "Parola da cercare: ",
+      "clear": "Pulisci"
+    },
+    "pagination": {
+      "elementToDisplay": "Elementi da visualizzare: ",
+      "previous": "Precedente",
+      "next": "Successiva"
+    },
+    "deleteRecord": "Cancellare riga?",
+    "actions": "Azioni"
+  },
+  "form": {
+    "title": "Aggiungi un nuovo impiegato",
+    "upload": "Carica",
+    "firstName": "Nome*",
+    "secondName": "Cognome*",
+    "username": "Nome Utente*",
+    "password": "Password*",
+    "confirmPassword": "Ripeti Password*",
+    "country": "Nazionalità",
+    "birthOfDate": "Data di Nascita*",
+    "maritalStatus": "Stato Civile",
+    "skills": "Abilità",
+    "passwordValid": "la Password e il ripeti Password devono essere uguali"
+  },
+  "editForm":
+  {
+    "title": "Modifica un impiegato",
+    "changeUsername": "Cambia Nome Utente"
+  },
+  "changePassword":
+  {
+    "title": "Cambia Password",
+    "password": "Password",
+    "current": "Password Corrente",
+    "confirm": "Ripeti Password",
+    "old": "La nuova Password non può essere uguale alla precedente!",
+    "confirmSame": "La Password e il ripeti Password devono corrispondere!",
+    "wrongPassword": "Nome utente o password errati",
+    "ok": "Password modificata con successo!"
+  },
+  "navigation":
+  {
+    "submit": "Invia",
+    "back": "Indietro",
+    "login": "Entra"
+  },
+  "messages":
+  {
+    "required": " è obbligatorio!",
+    "expired": "La sessione è scaduta, per favore effettuare di nuovo l'accesso",
+    "passwordValid": "Le due password inserite sono diverse"
+  },
+  "username":
+  {
+    "username": "Nome Utente",
+    "error": "Il nome utente esiste già!"
+  },
+  "login":
+  {
+    "title": "Entra",
+    "username": "Nome Utente",
+    "password": "Password",
+    "error": "Nome utente o password errati"
+  }
+}

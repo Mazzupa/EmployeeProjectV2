@@ -1,0 +1,11 @@
+
+<div class="dropdown language">
+  <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="flag-icon flag-icon-{{currentLang.flag}}"></span> {{currentLang.lang}}
+  </button>
+  <div class="dropdown-menu dropdown-menu-right text-right language">
+    <a class="dropdown-item" (click)="useLanguage('en')"><span class="flag-icon flag-icon-us"> </span> English</a>
+    <a class="dropdown-item" (click)="useLanguage('it')"><span class="flag-icon flag-icon-it"> </span> Italiano</a>
+  </div>
+</div>
+

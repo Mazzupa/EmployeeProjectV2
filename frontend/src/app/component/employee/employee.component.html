@@ -1,0 +1,13 @@
+
+<app-nav-bar [user]="currentUser"></app-nav-bar>
+
+<app-table
+  [data]="employees"
+  [headers]="header"
+  [indexField]="'id'"
+  [actions]="actions"
+  [currentUser]="currentUser"
+  [genericService]="employeeService"
+  [imageUrlAPI]="imageUrl"
+>
+</app-table>

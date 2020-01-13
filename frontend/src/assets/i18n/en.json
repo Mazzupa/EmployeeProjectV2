@@ -1,0 +1,78 @@
+{
+  "navBar": {
+    "title": "Employees",
+    "dropdown": {
+      "changePassword": "Change Password",
+      "logout": "Logout"
+    }
+  },
+  "table": {
+    "search": {
+      "placeHolder": "Search",
+      "all": "All",
+      "stringToMatch": "String to Match: ",
+      "clear": "Clear"
+    },
+    "pagination": {
+      "elementToDisplay": "Elements to display",
+      "previous": "Previous",
+      "next": "next"
+    },
+    "deleteRecord": "Delete record?",
+    "actions": "Actions"
+  },
+  "form": {
+    "title": "Add a new Employee",
+    "upload": "Upload",
+    "firstName": "First Name*",
+    "secondName": "Second Name*",
+    "username": "username*",
+    "password": "Password*",
+    "confirmPassword": "Confirm Password*",
+    "country": "Country",
+    "birthOfDate": "Birth Of Date*",
+    "maritalStatus": "Marital Status",
+    "skills": "Skills",
+    "passwordValid": "Password and the Password Confirm must be the same"
+  },
+  "editForm":
+  {
+    "title": "Edit the Employee",
+    "changeUsername": "Change Username"
+  },
+  "changePassword":
+  {
+    "title": "Change Password",
+    "password": "Password",
+    "current": "Current Password",
+    "confirm": "Confirm Password",
+    "old": "The new password can not be the same of the old password!",
+    "confirmSame": "Password and the Password Confirm must be the same",
+    "wrongPassword": "Wrong Username or Password",
+    "ok": "Password changed with success!"
+  },
+  "navigation":
+  {
+    "submit": "Submit",
+    "back": "Go back",
+    "login": "Login"
+  },
+  "messages":
+  {
+    "required": " is required!",
+    "expired": "Session expired, please log in",
+    "passwordValid": "Passwords are different"
+  },
+  "username":
+  {
+    "username": "Username",
+    "error": "Username already exist!"
+  },
+  "login":
+  {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "error": "Wrong Username or Password"
+  }
+}

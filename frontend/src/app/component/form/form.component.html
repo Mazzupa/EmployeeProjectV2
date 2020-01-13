@@ -1,0 +1,102 @@
+<app-nav-bar [user]="currentUser"></app-nav-bar>
+
+<div class="container">
+  <div>
+    <h1>{{'form.title' | translate}}</h1>
+    <form (ngSubmit)="onSubmit()" #EmployeeForm="ngForm">
+      <div class="form-group">
+        <label for="firstName">{{'form.firstName' | translate}}</label>
+        <input type="text" class="form-control" id="firstName" name="firstName"
+               required
+               [(ngModel)]="employee.firstName"
+               #firstName="ngModel">
+        <div [hidden]="firstName.valid || firstName.pristine"
+             class="alert alert-danger">
+          {{'form.firstName' | translate}}{{'messages.required' | translate}}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="secondName">{{'form.secondName' | translate}}</label>
+        <input type="text" class="form-control" id="secondName"
+               required
+               [(ngModel)]="employee.secondName" name="secondName"
+               #secondName="ngModel">
+        <div [hidden]="secondName.valid || secondName.pristine"
+             class="alert alert-danger">
+          {{'form.secondName' | translate}}{{'messages.required' | translate}}
+        </div>
+      </div>
+
+      <app-username-checker
+        name="validUsername" [(ngModel)]="employee.username" required>
+      </app-username-checker>
+
+      <div class="form-group">
+        <label for="password">{{'form.password' | translate}}</label>
+        <input type="password" class="form-control" id="password"
+               required
+               [(ngModel)]="employee.password.password" name="password"
+               #password="ngModel">
+        <div [hidden]="password.valid || password.pristine"
+             class="alert alert-danger">
+          {{'form.password' | translate}}{{'messages.required' | translate}}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="passwordConfirm">{{'form.confirmPassword' | translate}}</label>
+        <input type="password" class="form-control" id="passwordConfirm"
+               required
+               [(ngModel)]="employee.passwordConfirm.password" name="passwordConfirm"
+               #passwordConfirm="ngModel">
+        <div [hidden]="password.value === passwordConfirm.value"
+             class="alert alert-danger">
+          {{'messages.passwordValid' | translate}}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="country">{{'form.country' | translate}}</label>
+        <input type="text" class="form-control" id="country"
+               [(ngModel)]="employee.country" name="country">
+      </div>
+
+      <div class="form-group">
+        <label for="birthOfDate">{{'form.birthOfDate' | translate}}</label>
+        <input type="date" class="form-control" id="birthOfDate"
+               required
+               [(ngModel)]="employee.birthOfDate" name="birthOfDate"
+               #birthOfDate="ngModel">
+        <div [hidden]="birthOfDate.valid || birthOfDate.pristine"
+             class="alert alert-danger">
+          {{'form.birthOfDate' | translate}}{{'messages.required' | translate}}
+        </div>
+      </div>
+
+      <!--
+      <div class="form-group">
+        <label for="maritalStatus">{{'form.maritalStatus' | translate}}</label>
+        <select class="form-control" id="maritalStatus"
+                [(ngModel)]="employee.maritalStatus" name="maritalStatus"
+                [compareWith]="customCompare">
+          <option *ngFor="let status of maritalStatuses" [ngValue]="status">{{status.status}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="skill">{{'form.skills' | translate}}</label>
+        <select class="form-control" id="skill"
+                multiple
+                [(ngModel)]="employee.skills" name="skill"
+                [compareWith]="customCompare">
+          <option *ngFor="let skill of skills" [ngValue]="skill">{{skill.skill}}</option>
+        </select>
+      </div>
+      -->
+      <button type="submit" class="btn btn-success" [disabled]="!EmployeeForm.form.valid"
+              style="margin-left: 4px">{{'navigation.submit' | translate}}</button>
+    </form>
+    <button class="btn btn-primary" (click)="goBack()">{{'navigation.back' | translate}}</button>
+  </div>
+</div>
